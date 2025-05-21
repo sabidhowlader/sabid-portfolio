@@ -1,91 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sabid Howlader | Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background: #1e90ff;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        header img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-top: 10px;
-            border: 4px solid white;
-        }
-        section {
-            padding: 40px 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-        h2 {
-            color: #1e90ff;
-        }
-        .skills ul {
-            list-style: none;
-            padding: 0;
-        }
-        .skills ul li {
-            background: #e0f0ff;
-            margin: 5px 0;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        .contact-info {
-            background: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        .contact-info a {
-            color: #1e90ff;
-            text-decoration: none;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sabid Howlader | Portfolio</title>
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header, section, footer {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    header {
+      text-align: center;
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid yellow;
+      object-fit: cover;
+    }
+    header h1 span {
+      color: #ffd700;
+    }
+    .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background: #ffd700;
+      color: #000;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    h2 {
+      color: #ffd700;
+    }
+    .card {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+    .skills-list, .projects-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .form-container input, .form-container textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 5px;
+      border: none;
+    }
+    .form-container button {
+      background: #ffd700;
+      border: none;
+      padding: 10px 20px;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #999;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Sabid Howlader</h1>
-        <p>23 Years Old | CSE Student | Frontend Web Developer</p>
-        <img src="C:\Users\sabid\OneDrive\Desktop\sabid\IMG-20231002-WA0011.jpg" alt="Sabid Howlader" />
-    </header>
+  <header>
+    <img src="IMG-20231002-WA0011.jpg" alt="Sabid Howlader">
+    <h1>Hello, I'm <span>Sabid</span></h1>
+    <p>Learning, Building, and Solving with Tech & Digital Skills</p>
+    <div class="buttons">
+      <a href="#projects">View Projects</a>
+      <a href="#contact">Contact Me</a>
+    </div>
+  </header>
 
-    <section>
-        <h2>About Me</h2>
-        <p>
-            Hello! I'm Sabid Howlader, a 23-year-old Computer Science & Engineering student with a passion for coding and web development. I love creating efficient and visually appealing applications.
-        </p>
-    </section>
+  <section>
+    <h2>About Me</h2>
+    <p>Hi! I'm Sabid Howlader, a 23-year-old male student of Computer Science and Engineering. I’m passionate about learning modern technologies and building solutions through programming and web development.</p>
+  </section>
 
-    <section class="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming Languages: Python, C++, Java</li>
-            <li>Frontend Development: HTML, CSS, JavaScript</li>
-        </ul>
-    </section>
+  <section>
+    <h2>Education</h2>
+    <div class="card">
+      <strong>Bachelor of Science (B.Sc.) in Computer Science and Engineering</strong><br>
+      University of [Your University Name Here] <br>
+      <em>Expected Graduation: [Your Year]</em>
+      <p><strong>Relevant Coursework:</strong></p>
+      <ul>
+        <li>Programming Fundamentals</li>
+        <li>Database Systems</li>
+        <li>Web Development</li>
+        <li>Computer Fundamentals</li>
+        <li>Digital Logic Design</li>
+      </ul>
+    </div>
+  </section>
 
-    <section>
-        <h2>Contact</h2>
-        <p>Phone: 01733894291</p>
-        <p>Email: <a href="mailto:msabid@gmail.com">msabid@gmail.com</a></p>
-    </section>
+  <section>
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <div class="card">
+        <strong>Technical Skills</strong>
+        <p>Python, C++, Java, HTML, CSS, JavaScript</p>
+      </div>
+      <div class="card">
+        <strong>Programming</strong>
+        <p>C, C++, Python</p>
+      </div>
+      <div class="card">
+        <strong>Soft Skills</strong>
+        <p>Problem Solving, Teamwork, Adaptability, Time Management</p>
+      </div>
+    </div>
+  </section>
 
-    <footer class="contact-info">
-        <p>&copy; 2025 Sabid Howlader. All rights reserved.</p>
-    </footer>
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects-list">
+      <div class="card">Personal Portfolio Website using HTML/CSS/JS</div>
+      <div class="card">Simple Weather App using API & JavaScript</div>
+      <div class="card">Student Management System in C++</div>
+      <div class="card">Blog Web Page Layout with Responsive Design</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="form-container">
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea rows="4" placeholder="Your Message"></textarea>
+      <button>Send Message</button>
+    </div>
+    <br>
+    <p>Email: <a href="mailto:msabid@gmail.com">msabid@gmail.com</a></p>
+    <p>Phone: 01733894291</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sabid Howlader. All rights reserved.</p>
+  </footer>
 </body>
 </html>
